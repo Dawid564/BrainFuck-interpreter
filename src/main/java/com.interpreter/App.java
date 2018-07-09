@@ -7,7 +7,7 @@ import java.util.Scanner;
  *
  */
 public class App {
-    private static Scanner scanner = new Scanner(System.in);
+
     private static int ptr;
     private static int length = 65535;
     private static byte memory[] = new byte[length];
@@ -17,6 +17,9 @@ public class App {
     }
 
     public static void main( String[] args ){
-        
+        System.out.println(">>>");
+        Scanner scanner = new Scanner(System.in);
+        String code = scanner.nextLine();
+        System.out.println(code);
     }
 }

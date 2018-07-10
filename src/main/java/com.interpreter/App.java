@@ -19,14 +19,20 @@ public class App {
 
             switch (s.charAt(i)){
                 case '+':
+                    memory[pointer] ++;
                     break;
                 case '-':
+                    memory[pointer] --;
                     break;
                 case '>':
+                    pointer ++;
                     break;
                 case '<':
+                    pointer --;
                     break;
                 case '.':
+                    //TODO convert to ascii
+                    System.out.println(memory[pointer]);
                     break;
                 case ',':
                     break;

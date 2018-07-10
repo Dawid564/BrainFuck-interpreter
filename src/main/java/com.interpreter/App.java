@@ -8,18 +8,41 @@ import java.util.Scanner;
  */
 public class App {
 
-    private static int ptr;
+    private static int pointer = 0;
     private static int length = 65535;
     private static byte memory[] = new byte[length];
 
-    private static void brainfuck(String s){
+    private static void brainFuck(String s){
 
+        //read characters
+        for (int i=0; i<s.length(); i++){
+
+            switch (s.charAt(i)){
+                case '+':
+                    break;
+                case '-':
+                    break;
+                case '>':
+                    break;
+                case '<':
+                    break;
+                case '.':
+                    break;
+                case ',':
+                    break;
+                case '[':
+                    break;
+                case ']':
+                    break;
+            }
+
+        }
     }
 
     public static void main( String[] args ){
         System.out.println(">>>");
         Scanner scanner = new Scanner(System.in);
         String code = scanner.nextLine();
-        System.out.println(code);
+        brainFuck(code);
     }
 }

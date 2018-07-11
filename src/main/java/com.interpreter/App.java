@@ -39,6 +39,18 @@ public class App {
                     break;
                 case '[':
                     i++;
+                    while (c > 0 || s.charAt(i) != ']') {
+                        if(s.charAt(i) == '['){
+                            c++;
+                        }else if(s.charAt(i) == ']'){
+                            c--;
+                        }
+                        i++;
+                    }
+                    i--;
+                    break;
+                case ']':
+                    i--;
                     while (c > 0 || s.charAt(i) != '[') {
                         if(s.charAt(i) == ']'){
                             c++;
@@ -48,8 +60,6 @@ public class App {
                         i--;
                     }
                     i--;
-                    break;
-                case ']':
                     break;
             }
 
